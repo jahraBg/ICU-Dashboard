@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ICU Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="hospital">
+
+            <div class="logo">
+                ❤️
+            </div>
+
+            <div>
+
+                <h1>JABER ALAHMED ARMED FORCES HOSPITAL</h1>
+
+                <h2>INTENSIVE CARE UNIT</h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="title">
+
+            ICU DASHBOARD
+
+        </div>
+
+
+        <div class="clock">
+
+            <div id="clock"></div>
+            <div id="date"></div>
+            <div id="day"></div>
+
+        </div>
+
+    </header>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+<!-- STATISTICS -->
+
+<section class="stats">
+
+    <div class="card teal">
+
+        <div class="icon">👥</div>
+
+        <div class="info">
+            <h3>NUMBER OF PATIENTS</h3>
+            <span id="patientCount">0</span>
+            <small>Total Patients</small>
+        </div>
+
+    </div>
+
+    <div class="card green">
+
+        <div class="icon">🛏</div>
+
+        <div class="info">
+            <h3>FREE BEDS</h3>
+            <span id="freeBeds">0</span>
+            <small>Available</small>
+        </div>
+
+    </div>
+
+    <div class="card blue">
+
+        <div class="icon">🫁</div>
+
+        <div class="info">
+            <h3>VENTILATED</h3>
+            <span id="ventilated">0</span>
+            <small>On Ventilator</small>
+        </div>
+
+    </div>
+
+    <div class="card orange">
+
+        <div class="icon">🏥</div>
+
+        <div class="info">
+            <h3>ADMISSIONS</h3>
+            <span id="admissions">0</span>
+            <small>Today</small>
+        </div>
+
+    </div>
+
+    <div class="card red">
+
+        <div class="icon">↩️</div>
+
+        <div class="info">
+            <h3>DISCHARGES</h3>
+            <span id="discharges">0</span>
+            <small>Today</small>
+        </div>
+
+    </div>
+
+</section>
+<div class="content">
+
+    <!-- PATIENT TABLE -->
+
+    <div class="patients">
+
+        <div class="table-title">
+            ICU PATIENTS
+        </div>
+
+        <table>
+
+           <thead>
+  <tr>
+    <th>ROOM</th>
+    <th>NAME OF PATIENT</th>
+    <th>DIAGNOSIS</th>
+    <th>UNIT</th>
+    <th>DOA IN ICU</th>
+    <th>DAYS</th>
+  </tr>
+</thead>
+
+              <tbody id="patientTable">
+
+             </tbody>
+        </table>
+
+    </div>
+
+
+    <!-- DOCTORS -->
+
+  <div class="doctors">
+
+    <div class="doctor-list" id="doctorList"></div>
+
+</div>
+
+</div>
+

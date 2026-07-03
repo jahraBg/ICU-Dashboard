@@ -1,0 +1,440 @@
+:root{
+
+--primary:#103B52;
+
+--secondary:#1CB5B2;
+
+--background:#EDF3F7;
+
+--white:#FFFFFF;
+
+--shadow:0 8px 22px rgba(0,0,0,.10);
+
+--radius:18px;
+
+--danger:#E74C3C;
+
+--warning:#F5A623;
+
+--success:#2ECC71;
+
+--blue:#3B82F6;
+
+}
+
+*{
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+
+}
+
+body{
+
+background:#eef3f7;
+
+font-family:Arial,Helvetica,sans-serif;
+
+}
+
+.dashboard{
+
+padding:15px;
+
+}
+
+header{
+
+height:90px;
+
+background:linear-gradient(90deg,#031827,#062a45);
+
+border-radius:18px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:25px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+}
+
+.hospital{
+
+display:flex;
+
+align-items:center;
+
+gap:18px;
+
+}
+
+.logo{
+
+font-size:55px;
+
+}
+
+h1{
+
+color:white;
+
+font-size:26px;
+
+font-weight:700;
+
+}
+
+h2{
+
+margin-top:4px;
+
+color:#29d2c9;
+
+font-size:16px;
+
+font-weight:600;
+
+}
+
+.title{
+
+color:white;
+
+font-size:46px;
+
+font-weight:800;
+
+letter-spacing:1px;
+
+}
+
+.clock{
+    width:310px;
+    height:85px;
+    border-radius:15px;
+    border:2px solid rgba(0,255,255,.25);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:#ffffff;
+}
+
+.clock #clock{
+    font-size:42px !important;
+    font-weight:700 !important;
+    color:#ffffff !important;
+    line-height:1;
+}
+
+.clock #date{
+    font-size:24px !important;
+    font-weight:600;
+    color:#1CB5B2 !important;
+    line-height:1.1;
+}
+
+.clock #day{
+    font-size:18px !important;
+    font-weight:500;
+    color:#1CB5B2 !important;
+}
+
+/* ==========================
+   STATISTICS
+========================== */
+
+.stats{
+
+display:flex;
+
+gap:15px;
+
+margin-top:12px;
+
+}
+
+.card{
+
+flex:1;
+
+background:white;
+
+border-radius:16px;
+
+padding:12px;
+
+display:flex;
+
+align-items:center;
+
+box-shadow:0 6px 15px rgba(0,0,0,.12);
+
+transition:.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-4px);
+
+}
+
+.icon{
+
+width:68px;
+
+height:68px;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:32px;
+
+color:white;
+
+margin-right:18px;
+
+}
+
+.info{
+
+display:flex;
+
+flex-direction:column;
+
+}
+
+.info h3{
+
+font-size:15px;
+
+margin-bottom:6px;
+
+}
+
+.info span{
+
+font-size:38px;
+
+font-weight:bold;
+
+}
+
+.info small{
+
+font-size:18px;
+
+color:#555;
+
+margin-top:4px;
+
+}
+
+.teal .icon{
+
+background:#0b8f8b;
+
+}
+
+.green .icon{
+
+background:#18a84f;
+
+}
+
+.blue .icon{
+
+background:#1565c0;
+
+}
+
+.orange .icon{
+
+background:#f39c12;
+
+}
+
+.red .icon{
+
+background:#d7263d;
+}
+
+/* ======================
+CONTENT
+====================== */
+
+.content{
+
+display:flex;
+
+gap:15px;
+
+margin-top:10px;
+
+}
+
+.patients{
+
+flex:4;
+
+background:white;
+
+border-radius:18px;
+
+overflow:hidden;
+
+box-shadow:0 6px 15px rgba(0,0,0,.12);
+
+}
+
+.doctors{
+    width:250px;
+    min-width:250px;
+    max-width:250px;
+}
+
+.doctor-card{
+    margin-bottom:12px;
+    border-radius:10px;
+    overflow:hidden;
+    background:white;
+    box-shadow:0 2px 6px rgba(0,0,0,.12);
+}
+
+.doctor-header{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:white;
+    padding:10px 14px;
+}
+
+.doctor-icon{
+    font-size:24px;
+}
+
+.doctor-title{
+    font-size:21px;
+    font-weight:700;
+    letter-spacing:.5px;
+}
+
+.doctor-body{
+    padding:10px 16px;
+}
+
+.doctor-name{
+    color:#1565c0;
+    font-size:18px;
+    font-weight:700;
+    line-height:1.7;
+}
+
+.table-title{
+
+background:linear-gradient(90deg,#03384d,#0b5968);
+
+color:white;
+
+text-align:center;
+
+padding:10px;
+
+font-size:24px;
+
+font-weight:bold;
+
+}
+
+table{
+
+width:100%;
+
+border-collapse:collapse;
+
+table-layout:fixed;
+
+}
+
+table th:nth-child(1),
+table td:nth-child(1){
+    width:90px;
+}
+
+table th:nth-child(2),
+table td:nth-child(2){
+    width:290px;
+}
+
+table th:nth-child(3),
+table td:nth-child(3){
+    width:260px;
+}
+
+table th:nth-child(4),
+table td:nth-child(4){
+    width:100px;
+}
+
+table th:nth-child(5),
+table td:nth-child(5){
+    width:110px;
+}
+
+table th:nth-child(6),
+table td:nth-child(6){
+    width:65px;
+}
+
+th{
+
+background:#0f6d78;
+
+white-space:nowrap;
+
+color:white;
+
+padding:9px;
+
+font-size:16px;
+
+}
+
+td{
+
+padding:6px 8px;
+
+height:38px;
+
+border:1px solid #e5e5e5;
+
+font-size:15px;
+
+text-align:center;
+
+}
+
+tbody tr:nth-child(even){
+
+background:#eef9fb;
+
+}
+
+tbody tr:hover{
+
+background:#d8f5ff;
+
+}
+
