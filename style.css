@@ -161,12 +161,12 @@ margin-top:12px;
 }
 
 .card{
-    height:80px;
-    padding:10px 15px;
+    height:70px;
+    padding:5px 12px;
 
     display:flex;
     align-items:center;
-    gap:15px;
+    gap:10px;
 
     background:white;
     border-radius:18px;
@@ -184,9 +184,9 @@ transform:translateY(-4px);
 
 .icon{
 
-width:55px;
+width:35px;
 
-height:55px;
+height:35px;
 
 border-radius:50%;
 
@@ -196,7 +196,7 @@ justify-content:center;
 
 align-items:center;
 
-font-size:30px;
+font-size:20px;
 
 color:white;
 
@@ -216,9 +216,9 @@ flex-direction:column;
 
 .info h3{
 
-font-size:15px;
+font-size:12px;
 
-margin-bottom:6px;
+margin-bottom:1px;
 
 }
 
@@ -232,11 +232,11 @@ font-weight:bold;
 
 .info small{
 
-font-size:18px;
+font-size:14px;
 
 color:#555;
 
-margin-top:4px;
+margin-top:1px;
 
 }
 
@@ -285,7 +285,7 @@ margin-top:10px;
 
 .patients{
 
-flex:4;
+flex:1;
 
 background:white;
 
@@ -369,43 +369,44 @@ font-weight:bold;
 }
 
 table{
-
-width:100%;
-
-border-collapse:collapse;
-
-table-layout:fixed;
-
+    width:100%;
+    table-layout:fixed;
 }
 
-table th:nth-child(1),
-table td:nth-child(1){
-    width:90px;
+
+th:nth-child(1),
+td:nth-child(1){
+    width:9%;
 }
 
-table th:nth-child(2),
-table td:nth-child(2){
-    width:290px;
+
+th:nth-child(2),
+td:nth-child(2){
+    width:32%;
 }
 
-table th:nth-child(3),
-table td:nth-child(3){
-    width:260px;
+
+th:nth-child(3),
+td:nth-child(3){
+    width:28%;
 }
 
-table th:nth-child(4),
-table td:nth-child(4){
-    width:100px;
+
+th:nth-child(4),
+td:nth-child(4){
+    width:12%;
 }
 
-table th:nth-child(5),
-table td:nth-child(5){
-    width:110px;
+
+th:nth-child(5),
+td:nth-child(5){
+    width:12%;
 }
 
-table th:nth-child(6),
-table td:nth-child(6){
-    width:65px;
+
+th:nth-child(6),
+td:nth-child(6){
+    width:7%;
 }
 
 th{
