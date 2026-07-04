@@ -40,7 +40,7 @@ font-family:Arial,Helvetica,sans-serif;
 
 .dashboard{
 
-padding:15px;
+padding:0px;
 
 }
 
@@ -50,7 +50,7 @@ height:90px;
 
 background:linear-gradient(90deg,#031827,#062a45);
 
-border-radius:18px;
+border-radius:0px;
 
 display:flex;
 
@@ -154,30 +154,24 @@ letter-spacing:1px;
 
 display:flex;
 
-gap:15px;
+gap:8px;
 
 margin-top:12px;
 
 }
 
 .card{
+    height:80px;
+    padding:10px 15px;
 
-flex:1;
+    display:flex;
+    align-items:center;
+    gap:15px;
 
-background:white;
+    background:white;
+    border-radius:18px;
 
-border-radius:16px;
-
-padding:12px;
-
-display:flex;
-
-align-items:center;
-
-box-shadow:0 6px 15px rgba(0,0,0,.12);
-
-transition:.3s;
-
+    box-shadow:0 4px 10px rgba(0,0,0,.12);
 }
 
 .card:hover{
@@ -186,11 +180,13 @@ transform:translateY(-4px);
 
 }
 
+
+
 .icon{
 
-width:68px;
+width:55px;
 
-height:68px;
+height:55px;
 
 border-radius:50%;
 
@@ -200,13 +196,15 @@ justify-content:center;
 
 align-items:center;
 
-font-size:32px;
+font-size:30px;
 
 color:white;
 
-margin-right:18px;
+margin-right:0px;
 
 }
+
+
 
 .info{
 
@@ -226,7 +224,7 @@ margin-bottom:6px;
 
 .info span{
 
-font-size:38px;
+font-size:28px;
 
 font-weight:bold;
 
@@ -299,49 +297,61 @@ box-shadow:0 6px 15px rgba(0,0,0,.12);
 
 }
 
+/* ===== DOCTORS COMPACT TV ===== */
+
 .doctors{
-    width:250px;
-    min-width:250px;
-    max-width:250px;
+    width:200px;
+    min-width:200px;
+    max-width:200px;
+    margin-top:-90px;
 }
 
+
 .doctor-card{
-    margin-bottom:12px;
+    margin-bottom:8px;          /* was 12 */
     border-radius:10px;
     overflow:hidden;
     background:white;
     box-shadow:0 2px 6px rgba(0,0,0,.12);
+
+    min-height:70px !important; /* smaller */
 }
+
 
 .doctor-header{
+    height:38px !important;     /* was 45-55 */
+    padding:2px 12px !important;
+
     display:flex;
     align-items:center;
-    gap:12px;
+    gap:8px;
+
     color:white;
-    padding:10px 14px;
 }
+
 
 .doctor-icon{
-    font-size:24px;
+    font-size:18px !important;
 }
+
 
 .doctor-title{
-    font-size:21px;
+    font-size:22px !important;
     font-weight:700;
-    letter-spacing:.5px;
 }
+
 
 .doctor-body{
-    padding:10px 16px;
+    padding:5px 12px !important;  /* was 10px 16px */
 }
+
 
 .doctor-name{
-    color:#1565c0;
-    font-size:18px;
+    font-size:22px !important;
     font-weight:700;
-    line-height:1.7;
-}
 
+    line-height:1.2 !important;   /* important */
+}
 .table-title{
 
 background:linear-gradient(90deg,#03384d,#0b5968);
@@ -412,6 +422,10 @@ font-size:16px;
 
 }
 
+/* ======================
+pt name size -  font-size
+====================== */
+
 td{
 
 padding:6px 8px;
@@ -420,7 +434,7 @@ height:38px;
 
 border:1px solid #e5e5e5;
 
-font-size:15px;
+font-size:21px;
 
 text-align:center;
 
@@ -437,4 +451,6 @@ tbody tr:hover{
 background:#d8f5ff;
 
 }
+
+
 

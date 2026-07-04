@@ -171,6 +171,6 @@ function getDaysInICU(doaText) {
     const start = new Date(admitDate.getFullYear(), admitDate.getMonth(), admitDate.getDate());
     const now = new Date(today.getFullYear(), today.getMonth(), today.getDate());
 
-    const diff = Math.floor((now - start) / 86400000);
-    return String(Math.max(diff, 0));
+  const diff = Math.floor((now - start) / 86400000) + 1;
+return String(Math.max(diff, 1));
 }
