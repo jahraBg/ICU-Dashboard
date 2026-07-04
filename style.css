@@ -403,12 +403,12 @@ td:nth-child(5){
     width:12%;
 }
 
-
+/*
 th:nth-child(6),
 td:nth-child(6){
     width:7%;
 }
-
+*/
 th{
 
 background:#0f6d78;
@@ -435,7 +435,7 @@ height:38px;
 
 border:1px solid #e5e5e5;
 
-font-size:21px;
+font-size:18px;
 
 text-align:center;
 
@@ -452,8 +452,6 @@ tbody tr:hover{
 background:#d8f5ff;
 
 }
-
-
 
 
 

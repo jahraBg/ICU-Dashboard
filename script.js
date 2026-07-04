@@ -120,13 +120,13 @@ function loadPatients(patients) {
             <td>${patient.diagnosis || ""}</td>
             <td>${patient.unit || ""}</td>
             <td>${patient.doaICU || ""}</td>
-            <td>${getDaysInICU(patient.doaICU)}</td>
+         
         `;
 
         table.appendChild(row);
     });
 }
-
+//   <td>${getDaysInICU(patient.doaICU)}</td>
 function updateClock() {
 
     const now = new Date();
@@ -148,29 +148,29 @@ function updateClock() {
 
 }
 
-function getDaysInICU(doaText) {
-    if (!doaText) return "";
+// function getDaysInICU(doaText) {
+//     if (!doaText) return "";
 
-    const text = String(doaText).trim();
+//     const text = String(doaText).trim();
 
-    // Accept DD/MM/YYYY or DD-MM-YYYY or DD\MM\YYYY
-    const parts = text.split(/[\/\\-]/).map(x => x.trim());
-    if (parts.length !== 3) return "";
+//     // Accept DD/MM/YYYY or DD-MM-YYYY or DD\MM\YYYY
+//     const parts = text.split(/[\/\\-]/).map(x => x.trim());
+//     if (parts.length !== 3) return "";
 
-    let day = parseInt(parts[0], 10);
-    let month = parseInt(parts[1], 10);
-    let year = parseInt(parts[2], 10);
+//     let day = parseInt(parts[0], 10);
+//     let month = parseInt(parts[1], 10);
+//     let year = parseInt(parts[2], 10);
 
-    if (Number.isNaN(day) || Number.isNaN(month) || Number.isNaN(year)) return "";
-    if (year < 100) year += 2000;
+//     if (Number.isNaN(day) || Number.isNaN(month) || Number.isNaN(year)) return "";
+//     if (year < 100) year += 2000;
 
-    const admitDate = new Date(year, month - 1, day);
-    if (isNaN(admitDate.getTime())) return "";
+//     const admitDate = new Date(year, month - 1, day);
+//     if (isNaN(admitDate.getTime())) return "";
 
-    const today = new Date();
-    const start = new Date(admitDate.getFullYear(), admitDate.getMonth(), admitDate.getDate());
-    const now = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+//     const today = new Date();
+//     const start = new Date(admitDate.getFullYear(), admitDate.getMonth(), admitDate.getDate());
+//     const now = new Date(today.getFullYear(), today.getMonth(), today.getDate());
 
-  const diff = Math.floor((now - start) / 86400000) + 1;
-return String(Math.max(diff, 1));
-}
+//   const diff = Math.floor((now - start) / 86400000) + 1;
+// return String(Math.max(diff, 1));
+// }
