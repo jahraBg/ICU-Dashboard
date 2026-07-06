@@ -48,7 +48,7 @@ const doctorIcons = {
 };
 
 const doctorColors = {
-    icu: "#00838f",
+    icu: "#1a9673",
     cardio: "#d00f0f",
     medical: "#1565c0",
     surgical: "#7b1fa2",
@@ -132,13 +132,17 @@ function updateClock() {
     const now = new Date();
 
     document.getElementById("clock").textContent =
-        now.toLocaleTimeString("en-GB");
+    now.toLocaleTimeString("en-US", {
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: true
+    });
 
     document.getElementById("date").textContent =
         now.toLocaleDateString("en-GB", {
             day: "2-digit",
             month: "long",
-            //year: "numeric"
+            year: "numeric"
         });
 
     document.getElementById("day").textContent =
@@ -174,3 +178,6 @@ function updateClock() {
 //   const diff = Math.floor((now - start) / 86400000) + 1;
 // return String(Math.max(diff, 1));
 // }
+
+
+// <h2>INTENSIVE CARE UNIT</h2>

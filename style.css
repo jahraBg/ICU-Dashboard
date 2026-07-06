@@ -137,11 +137,12 @@ letter-spacing:1px;
 }
 
 .clock #date{
-    font-size:24px !important;
+    font-size:22px !important;
     font-weight:600;
     color:#1CB5B2 !important;
-    line-height:1.1;
+    line-height:1;
     white-space:nowrap;
+    overflow:visible;
 }
 
 .clock #day{
