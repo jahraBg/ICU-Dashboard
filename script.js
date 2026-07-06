@@ -49,7 +49,7 @@ const doctorIcons = {
 
 const doctorColors = {
     icu: "#00838f",
-    cardio: "#f8c352",
+    cardio: "#d00f0f",
     medical: "#1565c0",
     surgical: "#7b1fa2",
     gastro: "#ef6c00",
@@ -138,7 +138,7 @@ function updateClock() {
         now.toLocaleDateString("en-GB", {
             day: "2-digit",
             month: "long",
-            year: "numeric"
+            //year: "numeric"
         });
 
     document.getElementById("day").textContent =
