@@ -49,7 +49,7 @@ const doctorIcons = {
 
 const doctorColors = {
     icu: "#00838f",
-    cardio: "#d32f2f",
+    cardio: "#f8c352",
     medical: "#1565c0",
     surgical: "#7b1fa2",
     gastro: "#ef6c00",

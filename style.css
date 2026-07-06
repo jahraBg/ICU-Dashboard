@@ -46,7 +46,7 @@ padding:0px;
 
 header{
 
-height:90px;
+height:100px;
 
 background:linear-gradient(90deg,#031827,#062a45);
 
@@ -76,10 +76,13 @@ gap:18px;
 
 .logo{
 
-font-size:55px;
+font-size:100px;
 
 }
-
+.red-heart{
+    color:#e53935 !important;
+    filter:saturate(200%);
+}
 h1{
 
 color:white;
@@ -138,6 +141,7 @@ letter-spacing:1px;
     font-weight:600;
     color:#1CB5B2 !important;
     line-height:1.1;
+    white-space:nowrap;
 }
 
 .clock #day{
@@ -152,15 +156,14 @@ letter-spacing:1px;
 
 .stats{
 
-display:flex;
-
-gap:8px;
-
-margin-top:12px;
-
-}
+    display:flex;
+    gap:8px;
+    width:calc(100% - 215px);
+    margin-right:0;
+   }
 
 .card{
+    flex:1;
     height:70px;
     padding:5px 12px;
 
@@ -303,7 +306,7 @@ box-shadow:0 6px 15px rgba(0,0,0,.12);
     width:200px;
     min-width:200px;
     max-width:200px;
-    margin-top:-90px;
+    margin-top:-70px;
 }
 
 
@@ -435,9 +438,13 @@ height:38px;
 
 border:1px solid #e5e5e5;
 
-font-size:18px;
+font-size:21px;
 
 text-align:center;
+
+font-weight:700;
+
+line-height:1.7;
 
 }
 
